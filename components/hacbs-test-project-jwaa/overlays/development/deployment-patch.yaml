@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-jwaa
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/quay-or-not-to-quay/nbe-e2e-gihb-tenant/integ-app-ovei/hacbs-test-project-jwaa@sha256:dbdd20251ec5e3825593528ad8173f9638aa6a0c5a88499593dfe5e29594151e
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
